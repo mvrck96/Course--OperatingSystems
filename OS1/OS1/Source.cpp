@@ -66,19 +66,12 @@ LRESULT CALLBACK WindowProcess(HWND hWindow,
 	RECT rectPlace;
 	HFONT hFont;
 
-	//static wchar_t textIn[2] = { ' ',' ' };
 	static wchar_t textOut[2] = {' ', ' '};
-	//static char textOutDb[3] = { ' ' ,' ' ,'\0' };
-	//int numIn = 0;
-	//int numOut = 0;
+
 
 	switch (uMessage)
 	{
-		/*case WM_CREATE:
-		MessageBox(NULL,
-			L"Пожалуйста, вводите символы и они будут отображаться на экране!",
-			L"ВНИМАНИЕ!!!", MB_ICONASTERISK | MB_OK);
-		break; */
+
 	case WM_PAINT:
 		hDeviceContext = BeginPaint(hWindow, &paintStruct);
 		GetClientRect(hWindow, &rectPlace);
@@ -90,9 +83,6 @@ LRESULT CALLBACK WindowProcess(HWND hWindow,
 		);
 		SelectObject(hDeviceContext, hFont);
 		DrawText(hDeviceContext, (LPCWSTR) textOut, 2, &rectPlace, DT_SINGLELINE | DT_CENTER | DT_VCENTER);
-		
-		//DrawText(hDeviceContext, (LPCWSTR)textIn, 2, &rectPlace, DT_SINGLELINE | DT_CENTER | DT_VCENTER);
-		//DrawText(hdc, istr, 2, &rect, DT_SINGLELINE | DT_CENTER | DT_VCENTER);
 		EndPaint(hWindow, &paintStruct);
 		break;
 
