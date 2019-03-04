@@ -184,6 +184,8 @@ LRESULT CALLBACK WindowProcess(HWND hWindow,
 				case VK_SPACE:
 					textOut[0] = ' ';
 					textOut[1] = ' ';
+					InvalidateRect(hWindow, NULL, TRUE);
+					break;
 			}
 		}break; 
 
