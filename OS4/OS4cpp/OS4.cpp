@@ -1,3 +1,5 @@
+/*O for this algoritm is (!n)*/
+
 #include <iostream>
 using namespace std;
 
@@ -5,7 +7,7 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	int unique = 0, i, j, sizeArr;
-	cout << "Äëèíà ìàññèâà: ";
+	cout << "Ã„Ã«Ã¨Ã­Ã  Ã¬Ã Ã±Ã±Ã¨Ã¢Ã : ";
 	cin >> sizeArr;
 	int *arr = new int[sizeArr];
 
@@ -20,5 +22,5 @@ int main()
 			}
 		}
 	}
-	cout <<"Êîëè÷åñòâî óíèêàëüíûõ ýëåìåíòîâ: " << (sizeArr - unique);
+	cout <<"ÃŠÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã³Ã­Ã¨ÃªÃ Ã«Ã¼Ã­Ã»Ãµ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã®Ã¢: " << (sizeArr - unique);
 }
