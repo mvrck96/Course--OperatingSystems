@@ -1,4 +1,6 @@
- # encoding: UTF-8
+# O of this algorithm is (!n)
+
+# encoding: UTF-8
 print ("Длинна массива: ")
 sizeArr =  gets.to_i
 unique = 0
