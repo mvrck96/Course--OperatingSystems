@@ -1,9 +1,14 @@
-def rand_array(x)
-  if (x > 0)
-    max = x - 1
-  end
-  x.times.map{ Random.rand(max) }
-end
-print ("N: ")
-b = rand_array(gets.to_i)
-print("Generated:\t",  b, "\n", "Distinct:\t",  (b.uniq).sort)
+ # encoding: UTF-8
+print ("Длинна массива: ")
+sizeArr =  gets.to_i
+unique = 0
+arr = Array.new(sizeArr)
+
+for i in 0..(sizeArr-1)
+  arr[i] = gets.to_i end
+for i in 0..sizeArr
+  for j in i..sizeArr
+    if ((i != j) && (arr[i] == arr[j])) then
+      unique += 1
+      break end end end
+print("Количество уникальных элементов: ", sizeArr - unique)
