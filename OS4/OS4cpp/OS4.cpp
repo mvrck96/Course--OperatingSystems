@@ -1,3 +1,5 @@
+/*O for this algorithm is (!n)*/
+
 #include <iostream>
 using namespace std;
 
@@ -5,7 +7,7 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	int unique = 0, i, j, sizeArr;
-	cout << "Длина массива: ";
+	cout << "Array lenght: ";
 	cin >> sizeArr;
 	int *arr = new int[sizeArr];
 
@@ -20,5 +22,5 @@ int main()
 			}
 		}
 	}
-	cout <<"Количество уникальных элементов: " << (sizeArr - unique);
+	cout <<"Number of distinct elements: " << (sizeArr - unique);
 }
