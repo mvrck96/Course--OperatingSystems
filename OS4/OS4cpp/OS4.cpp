@@ -1,4 +1,4 @@
-/*O for this algoritm is (!n)*/
+/*O for this algorithm is (!n)*/
 
 #include <iostream>
 using namespace std;
